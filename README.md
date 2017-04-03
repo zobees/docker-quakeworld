@@ -58,7 +58,7 @@ Note that you can use Go templates in your configuration files and the appropria
 
 You can append to the server's default configuration by creating a `overrides.cfg` in your volume, which will be executed after default configuration has been applied.
 
-You can also completely override the default configuration should you so desire by creating a `server.cfg` in your volume.  Note that this will render all environment variable configuration ineffective unless you supply it yourself.  You can use the default configuration template [here](XXX) as a starting point.
+You can also completely override the default configuration should you so desire by creating a `server.cfg` in your volume.  Note that this will render all environment variable configuration ineffective unless you supply it yourself.  You can use the default configuration template [here](https://raw.githubusercontent.com/zobees/docker-quakeworld/master/build/mount/templates/qw/server.cfg) as a starting point.
 
 ### Extending the image
 
