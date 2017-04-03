@@ -1,0 +1,9 @@
+server:
+  image: zobees/quakeworld
+  environment:
+    PORT: 27500
+  ports:
+    - "27500:27500"
+    - "27500:27500/udp"
+  volumes:
+    - ./build/mount/paks:/qw-mount
