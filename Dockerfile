@@ -2,7 +2,6 @@ FROM zobees/mvdsv
 
 ENV QW_MOUNT=/qw-mount \
     PORT=27500 \
-    QW_GAMEDIR="qw" \
     QW_NAME="QuakeWorld Server" \
     QW_ADMIN="Nobody" \
     QW_URL="" \
