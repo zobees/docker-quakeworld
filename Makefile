@@ -1,5 +1,5 @@
 .PHONY: builder build buildershell shell clean
-	
+
 PROJECT=quakeworld
 IMAGE=zobees/$(PROJECT)
 BUILD_IMAGE=$(IMAGE)-build
@@ -7,7 +7,7 @@ BUILD_DIR=$(PWD)/build/mount
 BUILD_MOUNT=/qw-build
 DEST_DIR=$(PWD)/files/qw
 DEST_MOUNT=/qw-dest
-	
+
 build: builder
 	docker build -t $(IMAGE) .
 
@@ -22,6 +22,6 @@ buildershell:
 clean:
 	-@docker rmi $(BUILD_IMAGE)
 	-@docker rmi $(IMAGE)
-	rm -rf files/qw
+	rm -rf $(DEST_DIR)
 
 default: build

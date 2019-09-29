@@ -1,5 +1,4 @@
 FROM ubuntu
-MAINTAINER cliffrowley@gmail.com
 
 USER root
 
